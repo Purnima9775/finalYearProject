@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hospital Availability</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9f2f1fcf1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+
+</head>
+    
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(42, 89, 165);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:  #F25C05;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 600px;   
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #availabilityResult {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+    <body>
+
+        <body bgcolor="blue">
+        <div id="title1">
+        
+          <nav class="navbar navbar-expand-lg nv">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">HealthHub</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#social-icons">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#social-icons">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#social-icons">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index2.html">About us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        
+        </div>
+
+    
+        
+     <section>       
+    <div class="container">
+        <h1>Hospital Availability Check</h1>
+        <form id="availabilityForm">
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required><br>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required><br>
+            <div class="b-contents">                   <div class="B-content">
+                <div class="B_HEAD">
+                    <center><h3>Search Hospital List</h3></center>
+                </div>
+                <center>
+                <form action="" method="post">
+                <div class="selects">
+                    <select name="dropdown-1" id="">
+                        <option value="Selectstate">Select state</option>
+                        <option value="all">All</option>
+                        <option value="Westbengal">West Bengal</option>
+                    </select>
+                    
+                    <select name="Dropdow-2" id="">
+                        <option value="Alipurduar ">Alipurduar</option>
+                        <option value="Bankura">Bankura</option>
+                        <option value="Birbhum ">Birbhum</option>
+                        <option value="cooch Behar ">Cooch Behar</option>
+                        <option value="Dakshin Dinajpur ">Dakshin Dinajpur</option>
+                        <option value="Darjeeling ">Darjeeling</option>
+                        <option value="Hooghly">Hooghly</option>
+                        <option value="Howrah ">Hawrah</option>
+                        <option value="Jalpaiguri ">Jalpaiguri</option>
+                        <option value="Jhargram ">Jhargram</option>
+                        <option value="Kalimpong">Kalimpong</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Malda">Malda</option>
+                        <option value="Murshidabad">Murshidabad</option>
+                        <option value="Nadia">Nadia</option>
+                        <option value="North 24 Parganas ">North 24 Parganas</option>
+                        <a href="Hospital.html"> <option value="Paschim Medinipur ">Paschim Medinipur</option>
+                        <option value="Paschim Bardhaman ">Paschim Bardhaman</option>
+                        <option value="Purba Bardhaman ">Purba Bardhaman</option>
+                        <option value="Purba Medinipur ">Purba Medinipur</option>
+                        <option value="Purulia ">Purulia</option>
+                        <option value="south 24 paraganas">south 24 paraganas</option>
+                        <option value="Uttar Dinajpur">Uttar Dinajpur</option>
+                        
+                    </select>
+
+                    <select name="dropdown-3" id="">
+                        <option value="Select Hospital">Select Hospital</option>
+                        <option value="eye">Eye</option>
+                        <option value="Dental">Dental</option>
+                        <option value="neuro">Neuro</option>
+                        <option value="Cardiact">Ca</option>
+                        <option value="Medicine">Medicine</option>
+                        <option value="Brane">Brane</option>
+                        <option value="Guinie">G</option>
+                        <option value="Child speacialist">Child Speacialist</option>
+                        <option value="Cycriatric">Cycriatric</option>
+                    </select><br><br>
+            
+        </form>
+        <div id="availabilityResult"></div>
+    </div></center>
+    <center><button type="submit">Check Availability</button></center><br><br>
+        <center><h5>Contact us</h5>
+        <div id="social-icons"class="social-icons">
+            <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="mailto:purnimadas3008@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <br><br>
+            <p>HealthHub-Team</p>
+        </div></center>
+</section>
+    <script>
+        const form = document.getElementById('availabilityForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            // Simulate availability check
+            const availabilityResult = document.getElementById('availabilityResult');
+            availabilityResult.innerHTML = <p>Availability for ${date} at ${time}:</p>;
+            const available = Math.random() < 0.5; // Random availability simulation
+            if (available) {
+                availabilityResult.innerHTML += '<p>Hospital is available</p>';
+            } else {
+                availabilityResult.innerHTML += '<p>Hospital is not available</p>';
+            }
+        });
+    </script>
+    
+</body>
+</html>

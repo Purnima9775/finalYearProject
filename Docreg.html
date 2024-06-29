@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <!--- My CSS Link-->
+    <link rel="stylesheet" href="homepaqge.css">
+   <link rel="stylesheet" href="Docregg.html">
+</head>
+<body>
+    <main>
+        <section class="learn">
+           <h1>Join Our Network of<br>Healthcare professionals..</h1>
+           <p>Register as a doctor to connect with patients and provide your services.<br> Your expertise can help improve healthcare access for many .</p>  
+        </section>
+
+        <section>
+            <div class="cta">
+                <p><span>Register now!</span>To provide service..</p>
+            </div>
+
+            
+    <div class="sign-up">
+        <form action="post" class="signup-form" data-netlify="true">
+            <div class="form-btn">
+                <input type="text" placeholder="Username" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">First Name cannot be empty</p>
+            </div>
+
+            <div class="form-btn">
+                <input type="text" placeholder="Password" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">Last Name cannot be empty</p>
+            </div>
+
+            <div class="form-btn">
+                <input type="email" placeholder="Email Address" required>
+                <img class="icon" src="./Images/icon-error.svg" alt="Error">
+                <p class="msg">Looks like this is not an email</p>
+            </div>
+
+            <div>
+                <!-- CAPTCHA implementation -->
+                <div class="g-recaptcha" data-sitekey="your-captcha-api-key"></div>
+            </div>
+           
+            <a href="Docregg.html">
+                <input id="submit-btn" type="button" value="Next" id="btn">
+            </a>
+            
+
+            <p class="terms">By clicking the button, you are agreeing to our <span><a href="#">Terms and Services</a></span></p>
+        </form>
+        </section>
+
+        
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const personalInfo = document.getElementById("personal-info");
+            const professionalInfo = document.getElementById("professional-info");
+            const consent = document.getElementById("consent");
+
+            const nextPersonalBtn = document.getElementById("next-personal");
+            const nextProfessionalBtn = document.getElementById("next-professional");
+
+            nextPersonalBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                personalInfo.classList.remove("active");
+                professionalInfo.classList.add("active");
+            });
+
+            nextProfessionalBtn.addEventListener("click", function (e) {
+                e.preventDefault();
+                professionalInfo.classList.remove("active");
+                consent.classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>

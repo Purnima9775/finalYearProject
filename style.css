@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+
+/* Here nav bar start */
+.nav {
+    height: 100px;
+    width: 100%;
+
+    /* background-color:red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 26px;
+    border-bottom: 2px solid #dadada;
+    position: sticky;
+    position: sticky;
+    height: 100px;
+}
+
+.nav-first {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.nav-first img {
+    height: 50px;
+    width: 40px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+.logo-txt h2 {
+    line-height: 1;
+    z-index: ;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-weight: ;
+    font-family: poppins;
+}
+
+.logo-txt h2:first-child {
+    color: red
+}
+
+.nav-second-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav h3 {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav button {
+    height: 37px;
+    width: 140px;
+    font-weight: 400;
+    border-radius: 25px;
+    border: none;
+    ;
+    background-color: crimson;
+    color: white;
+    font-weight: 700;
+}
+
+/* here nav end */
+.body-content {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    border-bottom: px solid red;
+}
+
+.left-content {
+    height: 100%;
+    width: 60%;
+    padding: 42px 40px;
+}
+
+.right-content {
+    height: 100%;
+    width: 40%;
+    background-image: url(donationFact.webp);
+    /* background-image: url(https://img.freepik.com/free-vector/illustration-person-donating-blood_23-2148236971.jpg?t=st=1711124273~exp=1711127873~hmac=02512bcea88b8ef533e9968c3e0b48ab069f4c8fe9aee5a0f17825a733941aa7&w=740); */
+    background-size: cover;
+    background-position: left;
+
+}
+
+.left-content h2 {
+    letter-spacing: 10px;
+    padding-bottom: 18px;
+    font-family: poppins;
+    font-weight: 500;
+
+}
+
+.left-content h1 {
+    font-weight: 900;
+    font-family: poppins;
+    padding-bottom: 14px;
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(73, 71, 71);
+    ;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    line-height: 1.1;
+}
+
+.left-content button {
+
+    height: 34px;
+    width: 130px;
+    /* border-radius: 24px; */
+    border: none;
+    background-color: crimson;
+    color: white;
+    position: relative;
+    left: 120px;
+    top: 10px;
+    font-weight: 600;
+}
+
+.b_donate-etc {
+    display: flex;
+    ;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 100%;
+    height: 210px;
+}
+
+.b_donate-etc .box {
+    height: 150px;
+    width: 190px;
+    border: 2px solid crimson;
+    text-align: center;
+    padding: 6px 4px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px crimson;
+}
+
+#box-1 {
+    background-color: crimson;
+    color: white;
+    font-weight: 700;
+}
+
+.b_donate-etc .box i {
+    font-size: 45px;
+    ;
+}
+
+.b_donate-etc .box h2 {
+    padding-top: 10px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.b_donate-etc a {
+    text-decoration: none;
+}
+
+.b_donate-etc .box:hover {
+    transform: scale(1.1);
+    transition: all;
+    transition-timing-function: linear;
+    transition-duration: .90s;
+    text-decoration: 1px solid underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    padding-top: 40px;
+
+}
+
+.footer h3 {
+    padding-bottom: 10px;
+    ;
+    font-weight: 700;
+    font-family: poppins;
+}
+
+.footer h4 {
+    padding-top: 2px;
+}
+
+.icons i:first-child {
+    color: blue;
+}
+
+.last-part {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    /* padding-top:6px; */
+    color: white;
+}
+
+.last-part h3 {
+    padding-top: 6px;
+}
+
+.last-part a {
+    text-decoration: none;
+    color: skyblue;
+    padding-top: 4px;
+}
+
+/* BLOOD AVILITY PAGE START */
+.B-content {
+    margin-top: 20px;
+    height: 150px;
+    width: 94%;
+    border: 1px solid black;
+    /* padding-top:10px; */
+}
+
+.Avilibility_form {
+    border: 2px solid red;
+}
+
+#con-f {
+    padding-left: 37px;
+    padding-top: 20px;
+    font-size: 28px;
+    font-family: poppins;
+    font-weight: 700;
+    color: crimson;
+    letter-spacing: 2px;
+}
+
+.B_HEAD {
+    height: 50px;
+    width: 100%;
+    background-color: red;
+    padding: 10px 20px;
+    color: white;
+    font-size: 19px;
+    ;
+
+}
+
+.b-contents {
+    display: flex;
+    justify-content: center;
+    /* padding-top:20px; */
+}
+
+.selects {
+    padding-top: 20px;
+    display: flex;
+    ;
+    justify-content: space-around;
+    align-items: center;
+    /* padding:0px 20px; */
+}
+
+.selects select {
+    height: 35px;
+    width: 250px;
+    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1.99px black;
+}
+
+.selects select:active {
+    box-shadow: 0px 0px 14px skyblue;
+
+}
+
+.avilibility-btn button {
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-weight: 500;
+}
+
+.avilibility-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 19px;
+
+}
+
+.footer h4:hover {
+    transform: translateX(5px);
+}
+
+/* BLOOD AVILIBILY PAGE END */
+/* BLOOD BANK LOCATION PPAGE START */
+#hospital {
+    height: 40px;
+    width: 300px;
+    padding: 0px 8px;
+    border-radius: 5px;
+    border: 1.20px solid black;
+    font-size: 16px;
+    ;
+    color: black;
+    font-weight: 700;
+}
+
+/* BLOOS BACK LOCATION END */
+/* BLOOD BANK CAMPUS PAGE START */
+#date-time {
+    height: 40px;
+    width: 300px;
+
+    padding: 0px 8px;
+    border-radius: 5px;
+    border: 1.20px solid black;
+    font-size: 16px;
+    ;
+    color: black;
+    font-weight: 700;
+}
+
+.date-time-camps:active {
+    box-shadow: 0px 0px 14px skyblue;
+
+}
+
+/* BLOOD BANK CAMPUS PAGE END */
+
+/* BLOOD DONATOR PAGE START */
+.BD-NAV {
+    height: 50px;
+    width: 100%;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.BD-NAV h1 {
+    font-size: 22px;
+}
+
+.BD-NAV #bd-nav-icon {
+    font-size: 23px;
+
+}
+
+.donor-reg-content {
+    display: flex;
+    ;
+    justify-content: center;
+    padding-top: 13px;
+
+}
+
+.donor-reg-form {
+    height: 500px;
+    width: 60%;
+    height:700px;
+
+    /* border: 2px solid red; */
+    border-radius: 5px;;
+    border:1px solid black;
+    box-shadow: 0px 0px 4px black;
+}
+
+.donor-reg-form .donor-reg-head h2 {
+    color: crimson;
+    font-weight: 500;
+    padding-bottom: 5px;;
+}
+.donor-reg-form .donor-reg-head p{
+    color:red;
+    font-weight: 500;
+}
+.donor-reg-head {
+    height: 100px;
+    width: 100%;
+    /* background-color: blue; */
+    border-bottom: 2px solid #dadada;
+}
+.donor-reg-head {
+    display: flex;
+    justify-content: space-between;
+    padding:9px 14px;;
+}
+.dhead-imag img{
+    height:88px;
+    width:160px;
+    object-fit: cover;
+    object-position: top;
+}
+.main-form-design{
+    width:100%;
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+    padding:23px 22px;
+    background-color: whitesmoke;;
+}
+
+.main-form-design input {
+    height:35px;
+    width:320px;
+margin-top: 5px;
+padding:0 6px;
+font-size: 18px;
+/* border: none; */
+outline: none;
+border-radius: 5px;
+}
+
+
+.main-form-design select{
+    height:35px;
+    width:320px;
+margin-top: 5px;
+padding:0 6px;
+font-size: 18px;
+/* border: none; */
+outline: none;
+border-radius: 5px;
+}
+.main-form-design input:hover{
+    box-shadow: 0px 0px 8px skyblue;
+    border-radius: 5px;
+    outline: none;
+}
+.main-form-design input::placeholder{
+    font-size: 16px;;
+}
+.select{
+    padding-top: 8px;
+}
+.blood-d-submission{
+    /* height:250px; */
+    background-color: whitesmoke;
+    display: inl;
+}
+.f-sub-content{
+    height: 100%;;
+    display: flex;
+    justify-content: space-between;
+    padding:10px 22px;
+    background-color: whitesmoke;;
+}
+.f-sub-content select{
+    height:35px;
+    width:320px;
+margin-top: 5px;
+padding:0 6px;
+font-size: 18px;
+/* border: none; */
+outline: none;
+border-radius: 5px;
+}
+.f-sub-content input{
+    height:35px;
+    width:320px;
+margin-top: 5px;
+padding:0 6px;
+font-size: 18px;
+/* border: none; */
+outline: none;
+border-radius: 5px;
+}
+.blood-d-submission h4{
+    color:crimson;
+font-size: 20px;
+font-weight: 60;
+margin-left: 14px;
+}
+.term-condition{
+    margin-left: 28px;
+    margin-top: 4px;
+}
+.button{
+    margin-top:18px;
+    display:flex;
+    justify-content: center;
+}
+.button button{
+    height:37px;
+    width:200px;
+    background-color: crimson;
+    color:white;
+    border:none;
+    border-radius: 5px;;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+/* BLOOD DONATOR PAGE END */
+/* BLOOD DONATION LIST START */
+.marquee{
+    height:30px;
+    width:100%;
+    background-color: red;
+    color:whitesmoke;
+    padding:4px;
+
+}
+.marquees{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.Blood-d-content{
+    height:300px;
+    width:50%;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 5px;
+    border:1px solid black;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+
+.b-content{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+}
+.Blood-d-content h2{
+font-size: 22px;
+color:crimson;
+padding-bottom: 4px;
+
+}
+.Blood-d-content p{
+    width:80%;
+}
+.b-head{
+    display: flex;
+    border-bottom: 1px solid red;
+}
+.b-head-second img{
+    height:90px;
+    width:140px;
+    object-fit: cover;
+    object-position: top;
+}
+form .left-content{
+    height:100px;
+    width:100%;
+    /* background-color: red;; */
+    display: flex;;
+    justify-content: space-between;
+    gap:30px;
+    padding-left: 0px;
+}
+.left-content select{
+    height:30px;
+    width:180px;
+}
+.list-button{
+    display:flex;
+    justify-content: center;
+    padding-top:15px;
+    
+}
+.list-button button{
+height:30px;
+width:150px;
+border-radius: 5px;
+outline: none;
+border: none;
+background-color: crimson;
+color:whitesmoke;
+font-weight: 700;
+}
+/* BLOOD DONATION LIST END */
